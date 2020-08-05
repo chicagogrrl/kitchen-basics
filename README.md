@@ -26,9 +26,10 @@ If you need help setting up a Ruby development environment, check out this [Rail
 If you want to run this in docker containers, follow these directions; otherwise continue to bin/setup.
 
 Install [Docker Desktop] and then from the root directory of this application, run
-`docker-compose build`
-`docker-compose run web rake db:create db:migrate`
-`docker-compose up`
+
+    docker-compose build
+    docker-compose run web rake db:create db:migrate
+    docker-compose up
 
 On subsequent runs you will only need the last command.
 
