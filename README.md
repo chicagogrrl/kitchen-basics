@@ -21,6 +21,20 @@ If you need help setting up a Ruby development environment, check out this [Rail
 
 ## Getting started
 
+## Docker
+
+If you want to run this in docker containers, follow these directions; otherwise continue to bin/setup.
+
+Install [Docker Desktop] and then from the root directory of this application, run
+`docker-compose build`
+`docker-compose run web rake db:create db:migrate`
+`docker-compose up`
+
+On subsequent runs you will only need the last command.
+
+Access the app at <http://localhost:3000/>.
+
+
 ### bin/setup
 
 Run the `bin/setup` script. This script will:
@@ -69,3 +83,4 @@ Optionally:
 [rbenv]:https://github.com/sstephenson/rbenv
 [redis]:http://redis.io
 [Homebrew]:http://brew.sh
+[Docker Desktop]:https://www.docker.com/products/docker-desktop
