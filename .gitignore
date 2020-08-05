@@ -36,3 +36,7 @@ yarn-debug.log*
 # Never check passwords into source control!
 /config/master.key
 /.env.development
+
+.DS_Store
+
+.env
